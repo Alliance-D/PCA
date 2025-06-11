@@ -3,17 +3,17 @@ def validate_same_size(A, B):
 
 def add_matrices(A, B):
     if not validate_same_size(A, B):
-        raise ValueError("Matrices must have the same dimensions to add.")
+        raise ValueError("Helooo, remember matrices must have the same dimensions to add.")
     return [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
 
 def subtract_matrices(A, B):
     if not validate_same_size(A, B):
-        raise ValueError("Matrices must have the same dimensions to subtract.")
+        raise ValueError("Please remember matrices must have the same dimensions to subtract.")
     return [[A[i][j] - B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
 
 def multiply_matrices(A, B):
     if len(A[0]) != len(B):
-        raise ValueError("Number of columns in A must equal number of rows in B to multiply.")
+        raise ValueError("Check well, Number of columns in A must equal number of rows in B to multiply.")
     
     result = []
     for i in range(len(A)):
